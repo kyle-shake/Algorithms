@@ -1,0 +1,51 @@
+File: README
+
+Author: Kyle Shake
+
+Date Created: 3/31/17
+
+Last Modified: 11/3/17
+
+README FOR: Haversine calculator
+
+To compile and run program: 
+	--type "./havTest.sh <option>"
+	--options are: "vector"
+			**Compiles program using vectors, then
+			tests all text files under the ./tests/
+			director 
+		       "list"
+			**LIST DOES NOT WORK. IT WILL COMPILE BUT
+			DURING EXECUTION, A SEGMENTATION FAULT OCCURS
+
+		       Any other argument passed to script will cause this
+			README to print with an error message
+	OR
+
+        --type "make" 
+		**THIS WILL ONLY CREATE THE VECTOR BASED PROGRAM
+
+Files Necessary for Compilation: HaversineWVector.cpp, HaversineWList.cpp,
+Location.cpp, Location.h, LinkedList.cpp, LinkedList.h
+
+Program Description: Program takes user input, usually in form of text file, of
+list of cities or locations and that respective location's latitude and longitude. 
+Sorts the cities by longitude, reports the West and East most cities, and 
+calculates the distance between each city using the Haversine formula. Then
+it does the same for latitude. 
+
+Program Assumptions: 
+	--Each city/location and it's latitude/longitude is on
+a separate line. 
+	--The cityname, latitude, and longitude are seperated by a
+space in the format: "Cityname Latitude Longitude"
+		***However, program will work with data
+		delimited by multiple spaces!!!
+
+Current Status:
+	-- Linked List based haversine Calculator does not work! It causes a 
+	segmentation fault. Debugging still in progress
+	-- Vector based Haversine Calculator DOES work! Need to verify that results
+	are accurate
+
+
