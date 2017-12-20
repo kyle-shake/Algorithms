@@ -1,0 +1,51 @@
+Filename: README
+Author: Kyle Shake
+Last Modified: 11/07/17
+
+PURPOSE:
+-----------------------------------------------
+This directory is a collection of two C++ files that
+calculate Fibonacci's sequence for some integer n
+(n >= 0) along with a test script to show the run 
+time differences between recursive function calls
+and recursive function calls along with a memoization
+technique
+-----------------------------------------------
+
+
+CONTENTS:
+-----------------------------------------------
+This directory and its subdirectory contains
+  -- Two C++ program files:
+     * recursive_fib.cpp
+     * memoization_fib.cpp
+  -- One test script:
+     *test.sh
+  -- One time test input file:
+     *time_test.in
+  -- A number #  of test files in ./tests:
+     *input#.in
+-----------------------------------------------
+
+
+HOW TO:
+-----------------------------------------------
+**FIRST**
+- Ensure the test script is executable
+  chmod u+x ./test.sh
+
+- How to time test the two programs:
+  ./test.sh time
+
+- How to test the two programs (untimed):
+  ./test.sh cpp
+
+- How to manually compile cpp
+  g++ -std=c++11 cpp/file_name.cpp -o cpp/file_name.out
+
+- How to manually run cpp
+  ./cpp/file_name.out < ./tests/input#.in
+
+- How to manually run cpp with timing info
+  ./cpp/file_name.out -t < ./tests/input#.in
+-----------------------------------------------

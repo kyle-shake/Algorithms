@@ -1,0 +1,9 @@
+Factorial Algorithm
+
+Author: Kyle Shake
+Last Modified: 11/8/17
+
+Input: An integer n
+Output: The factorial of inputted integer n
+
+This program computes the factorial of inputted integer n using a recursive function.

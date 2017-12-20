@@ -1,0 +1,39 @@
+#README: CS315 HW4
+#
+#Author: Kyle Shake
+#Date: 2/7/17
+#
+#
+#
+#
+#
+#
+
+
+The largest n calculated in =< 20s:
+	1) mysterious_seq_recursive -- n = 18
+			**Notes:**
+			 The program completed an n= 18 in nearly 9s.
+			At n=19, the program completed in around 24.5s.
+
+	2) mysterious_seq_memoized --  20000 < n < 22000 in 20s.
+			**Notes:**
+				The program completed a range of n's in 20s 
+			depending on the login time and the server being used. 
+			I found that violet performed better than iris; it
+			is my suspicion that iris is the busier server.	
+
+Discussion
+	It is apparent that the memoized version saves an exponential amount 
+of time but I'm curious about it's memory consumption. Also, it is interesting
+enough to note that increasing the size of n for the memoized program only 
+fractionally increases the time to completion. Where for the simple recursive
+version, the time to completion increases exponentially with an increase in n.
+	
+
+Also interesting to note, in the memoized version, at n=57 to n = 21000+ (as far as
+I've tried) the result will always be equal to 808. I'm not sure if this 
+is due to an overflow issue or if that is truly the last 3 digits of every 
+number in the sequence on and after n=57; the former seems more likely 
+than the latter.
+
